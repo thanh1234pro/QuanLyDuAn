@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/cs.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            pos = $("#mainNav").position();
+            $(window).scroll(function() {
+                var posScroll = $(document).scrollTop();
+                if(parseInt(posScroll) > parseInt(pos.top)){
+                    $("#mainNav").addClass('fixed');
+                }else{
+                    $("#mainNav").removeClass('fixed');
+                }
+            });
+        });
+ $(document).ready(function() {
+    var stt = 0;
+    starImg = $("img.slide:first").attr("stt");
+    endImg = $("img.slide:last").attr("stt");
+    $("img.slide").each(function(){
+        if($(this) .is(':visible'))
+            stt = $(this).attr("stt");
+
+    });
+$("#next").click(function(){
+    if (stt == endImg) {
+        stt = -1;
+
+    }
+    next = ++stt;
+    $("img.slide").hide();
+   $("img.slide").eq(next).show();
+ });  
+ $("#prev").click(function(){
+    if (stt==0) {
+        stt=endImg;
+        prev = stt++; 
+         }
+    prev = --stt;
+    $("img.slide").hide();
+   $("img.slide").eq(prev).show();
+ }); 
+  setInterval(function(){
+    $("#next").click();
+  },2000);
+
+  
+ }); 
+ // doimaubg
+
+       function doimau() {    
+        document.getElementById("bg").style.backgroundColor = "#444444";           
+        } 
+       function doimau1() {    
+        document.getElementById("bg").style.backgroundColor = "white";
+     
+           
+        } 
+    </script>
+  <style type="text/css">
+    .vertical-menu {
+  width: 230px;
+}
+
+.vertical-menu a {
+  background-color: #9999FF;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #3399CC;
+}
+
+.vertical-menu a.active {
+  background-color: #003399;
+  color: white;
+}
+/*chayanh*/
+#slider{
+    margin: 0px auto;
+    width: 1000px;
+    height: 400px;
+    border: 1px solid #333;
+    position: relative;
+}
+.slide{
+    width: 998px;
+    height: 400px;
+}
+#prev{
+    text-transform: uppercase;
+    top: 180px;
+    left: 10px;
+    position:absolute;
+}
+#next{
+    text-transform: uppercase;
+    top: 180px;
+    right:10px;
+    position:absolute;
+}
+#anh2{
+    text-transform: uppercase;
+    top: 1700px;
+    left: 300px;
+    position:absolute;
+}
+/*MENU BEN TRAI*/
+#mySidenav a {
+
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 130px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 680px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 740px;
+  background-color: #2196F3; /* Blue */
+}
+
+#projects {
+  top: 800px;
+  background-color: #f44336; /* Red */
+}
+
+#contact {
+  top: 860px;
+  background-color: #555 /* Light Black */
+}
+  </style>
+</head>
+<body>
+    <div id="bg"> 
+    <div id="A-1" class="container-fluid">
+      <div class="container">
+          <div class="row">
+          <div class="col-md-4">
+              <img src="anh/LoGo.png">
+          </div>
+          <div class="col-md-4">
+               <center> <h1><strong>HELLO ENGLISH</strong></h1> <div class="br"></div>
+               <h5 class="T-T"> Giải pháp học tiếng Anh giao tiếp tốt nhất cho người bận rộn</h5></center></div>
+          <div class="col-md-4">
+          <!-- <div class="T-H">
+            <h5><strong><i class="fas fa-phone-volume"></i> HOTLINE: 0988.333.22#</strong></h5>
+          </div> -->
+            <div class="A-D">
+              <a class="login-window button bg-danger" href="#login-box" ><i class="fa fa-home"></i> Đăng Ký</a>
+              <a class="login-window button bg-info" href="#login-box1" ><i class="fa fa-envelope"></i> Đăng nhập</a>
+            </div>
+          </div>
+          </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container-fluid">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#"><strong>HELLO</strong></a>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="BootStrap1.html"><strong>Trang Chủ</strong></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="trangcon1.html"><strong>Giới Thiệu</strong></a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Khóa Học</strong></a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                  <a class="dropdown-item" href="trangcon3.html"><strong>Tiếng Anh Trẻ Em</strong></a>
+                                  <a class="dropdown-item" href="trangcon5.html"><strong>Tiếng Anh Doanh Nghiệp</strong></a></a>
+                                  <a class="dropdown-item" href="trangcon4.html"><strong>Tiếng Anh luyện thi IELTS</strong></a>
+                              </div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="trangcon2.html"><strong>Tin Tức & Sự Kiện</strong></a>
+                          </li>
+                          <li class="nav-item">
+                           <a class="nav-link" href="trangcon7.html"><strong>Xu Hướng</strong></a>
+                          </li>
+                      </ul>
+                          <form>
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                        <div>
+                          <i class="fas fa-dolly" style="margin-left:8px;color: azure;"></i>
+                        </div>
+                        </div>
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                              <form class="form-inline mr-auto w-100 navbar-search">
+                                <div class="input-group">
+                                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">
+                                      <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </li>
+                        
+                          <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-bell fa-fw"></i>
+                             
+                              <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                              <h6 class="dropdown-header">
+                                THÔNG BÁO
+                              </h6>
+                              <a class="dropdown-item d-flex align-items-center" href="#Modal-KH">
+                                <div class="mr-3">
+                                  <div class="icon-circle bg-primary">
+                                    <i class="fas fa-file-alt text-white"></i>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="font-weight-bold">KHÓA HỌC XÓA MÙA ENGLISH</div>Đăng Ký Ngay ! Các bạn ơi giảm học phí Duy nhát tháng 7 này !
+                                </div>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" src="#Modal-KH">
+                                <div class="mr-3">
+                                  <div class="icon-circle bg-success">
+                                    <i class="fas fa-donate text-white"></i>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="font-weight-bold">KHÓA HỌC CẤP TỐC</div>
+                                  Mua ngay thôi các bạn ơi, chỉ 499k có ngay khóa học !
+                                </div>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#Modal-KH">
+                                <div class="mr-3">
+                                  <div class="icon-circle bg-warning">
+                                    <i class="fas fa-exclamation-triangle text-white"></i>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="font-weight-bold">KHÓA HỌC ENGLISH DOANH NGHIỆP</div>
+                                  Còn chừng chờ gì nữa ! Hot Hot sẽ mở trong tháng 8 này !
+                                </div>
+                              </a>
+                              <a class="dropdown-item text-center small text-gray-500" href="#">Xem thêm</a>
+                            </div>
+                          </li>
+              </div>
+          </div>   
+    </nav>
+</div>
+      <div class="container-fluid">
+     <div style="margin-top: 40px; margin-left:30px">
+               <div class="row">
+            <div class="col-md-2">
+                          <div class="vertical-menu" >
+              <a href="trangcon7.html" class="active">Tin Tức Về Web</a>
+              <a href="trangcon3.html">Khóa Học Trẻ EM</a>
+              <a href="trangcon5.html">Khóa Học Doanh Nghiệp</a>
+              <a href="trangcon4.html">Luyện Thi IELTS </a>
+              <a href="#">Nâng Cao Kỹ Năng</a>
+              
+            </div> <br>
+            <div class="vertical-menu">
+              <a href="#" class="active">HỔ TRỢ KHÁCH HÀNG</a>
+              <a href="trangcon2.html">Tin Tức</a>
+              <a href="#">Liên Hệ : 0123456789</a>
+              <a href="BootStrap1">Giải Đáp</a>
+             
+             </div> 
+
+            </div>  
+      <div class="col-md-8">
+         <div style="margin-top: 30px;">
+          <center> <h3 style="color:#3300CC"> Chúng Tôi <strong style="color:#FF3366"> Là Ai?</strong></h3> <hr>
+           <p> Thành lập từ năm 2003, sau hơn 15 năm phát triển, Hệ thống Anh ngữ Quốc tế<strong>  HELLO ENGLISH</strong></p>
+            <p>tự hào là <strong> đơn vị tiên phong ứng dụng công nghệ trí tuệ nhân tạo </strong> vào giảng dạy, trở thành tổ chức đào tạo </p>
+            <p>Tiếng Anh chất lượng hàng đầu tại Việt Nam.</p><br>
+            <p> Đến nay, <strong>  HELLO ENGLISH</strong> đã xây dựng thành công hệ thống 25 trung tâm trên toàn quốc, với hơn</p>
+            <P> 100.000 học viên, cung cấp các khóa đào tạo : Tiếng Anh Trẻ Em - Luyện thi IELTS cam kết đầu ra -</P>
+            <p> Tiếng Anh Doanh Nghiệp và Du học.</p><br>
+            </center>
+               <div id="slider">
+          <img class="slide"  src="anh/anh20.jpg" stt="1" >
+           <img class="slide" src="anh/anh21.jpg" stt="2" style="display: none;"/>
+           <img class="slide" src="anh/anh29.jpg" stt="3" style="display: none;"/>
+           <img class="slide" src="anh/anh35.png" stt="4" style="display: none;"/>
+            <img class="slide" src="anh/anh9.jpg" stt="5" style="display: none;"/>
+            <img class="slide" src="anh/anh21.jpg" stt="6" style="display: none;"/>
+           <img class="slide" src="anh/anh29.jpg" stt="7" style="display: none;"/>
+           <img class="slide" src="anh/anh35.png" stt="8" style="display: none;"/>
+            <img class="slide" src="anh/anh9.jpg" stt="9" style="display: none;"/>
+            <a href="#" id="prev"><!-- <img src="im/services_1.png"> --></a>
+             <a href="#" id="next"><!-- <img src="im/services_1.png"> --></a>
+        </div>
+         </div>
+    <div style="margin-top: 30px;">
+         <img src="anh/anh20.jpg" style="float:right;"height="280" height="270">
+            <h2> <strong style="color:blue" > <i class="fa fa-arrow-circle-right" style="color:#00CC00"></i> Tầm nhìn </strong> & <strong style="color:#FF3366"> sứ mệnh </strong></h2><br><br>
+            <h5>  Là tổ chức đào tạo Tiếng Anh </h5><br>
+            <p> <strong><i class="fa fa-chevron-circle-right" style="color:red"></i> Chất lượng </strong>  tốt nhất Việt Nam với nhà giáo </p>
+            <p> tận tâm và công nghệ tiên tiến </p>
+            <p><strong> <i class="fa fa-chevron-circle-right" style="color:red"></i> Sứ mệnh </strong> Vì một Việt Nam giỏi Tiếng Anh</p><br><br>
+             <img src="anh/anh21.jpg" style="float:left; margin-right:25px" "height="280" height="270">
+            <h3> <i class="fa fa-arrow-circle-right" style="color:#00CC00"></i> Mục tiêu của <strong style="color:blue"> HELLO ENGLISH  </strong>  </h3><br>
+                 <p> <i class="fa fa-chevron-circle-right" style="color:red"></i> Đào tạo 6 triệu học viên giỏi Tiếng Anh trên toàn quốc</p>
+                     <p>Giai đoạn 2018 - 2023 (20 năm thành lập)</p>
+                 </div>
+
+ 
+
+
+
+       </div>
+       <div class="col-md-2">
+          <div class="card-deck">
+            <div class="card" style="width: 380px">
+              <div class="card-body">
+                <a href="Trang-Bán-1.html#A-1" style="text-decoration: none;">
+                  <img class="card-img-top" src="anh/bia-truoc-1.png" alt="Xin hãy tải lại !" style="height:250px;width:200px"> 
+                  <h5 class="card-title">Bộ 2000 Từ Vựng Tiếng Anh Theo Chủ Đề</h5>
+                  <h5 style="color:#FF6600">59.000đ</h5>
+                  <del>250.000đ</del>
+                </a>
+              </div>
+              </div>
+            </div>
+            <br>
+            <div class="card-deck">
+            <div class="card" style="width: 380px">
+              <div class="card-body">
+                <a href="Trang-Bán-2.html#A-1" style="text-decoration: none;">
+                  <img class="card-img-top" src="anh/bia-truoc-2.png" alt="Xin hãy tải lại !" style="height:250px;width:200px"> 
+                  <h5 class="card-title">Sách - Ứng dụng siêu trí nhớ 4000 từ vựng</h5>
+                  <h5 style="color:#FF6600">99.000đ</h5>
+                  <del>250.000đ</del>
+                </a>
+              </div>
+              </div>
+            </div><br>
+            <div class="card-deck">
+            <div class="card" style="width: 380px">
+              <div class="card-body">
+                <a href="Trang-Bán-3.html#A-1" style="text-decoration: none;">
+                  <img class="card-img-top" src="anh/bia-truoc-3.png" alt="Xin hãy tải lại !" style="height:250px;width:200px"> 
+                  <h5 class="card-title">Sách - The Ultimate Guide to Academic Reading</h5>
+                  <h5 style="color:#FF6600">129.000đ</h5>
+                  <del>250.000đ</del>
+                </a>
+              </div>
+              </div>
+          </div>
+        </div>
+     
+</div>
+</div>
+          <div class="container-fluid" style="background-image: url(anh/anh57.jpg);height:480px"> 
+                
+             <div style="background:white; width:1000px; height: 250px" id="anh2">
+              <p style="font-size:190%;color:#3333CC; margin-top:30px;margin-right:30px;margin-left:30px;"><b>"Điều kỳ diệu sẽ không xảy ra khi chúng ta vẫn nghĩ và làm theo cách vẫn làm"</b></p>
+               <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#Modal-KH" style="margin-left:600px">
+                          <strong>Đăng Ký Ngay</strong>
+                        </button>
+ </div>
+</div>
+
+
+    <div class="media border p-3">
+  <img src="anh/anh47.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+  <div class="media-body">
+    <h4>John Doe <small><i>Posted on February 19, 2020</i></small></h4>
+    <p>Tàm Tạm :(</p>
+    <div class="media p-3">
+      <img src="anh/anh46.jpg" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+      <div class="media-body">
+        <h4>Jane Doe <small><i>Posted on February 20 2020</i></small></h4>
+        <p>Vâng :(</p>
+      </div>
+    </div> 
+  </div>
+</div>
+ <div class="media border p-3">
+  <img src="anh/anh34.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+  <div class="media-body">
+    <h4>John Doe <small><i>Posted on February 19, 2020</i></small></h4>
+    <p>Good</p>
+    <div class="media p-3">
+      <img src="anh/anh46.jpg" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+      <div class="media-body">
+        <h4>Jane Doe <small><i>Posted on February 20 2020</i></small></h4>
+        <p>Pơ Phẹt</p>
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="media border p-3">
+  <img src="anh/anh40.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+  <div class="media-body">
+    <h4>John Doe <small><i>Posted on February 19, 2020</i></small></h4>
+    <p>Very good</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+     <div id="mySidenav" class="sidenav">
+  <a href="#" id="about" onclick="doimau()">Dark Mode</a>
+  <a href="#" id="blog" onclick="doimau1()">Tắt Mode</a>
+  <a href="#" id="projects" data-toggle="modal" data-target="#Modal-KH">Quà Tặng</a>
+  <a href="https://www.facebook.com/" id="contact">Facebook</a>
+</div>
+
+
+ <div class="modal" id="Modal-KH">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: #2574A9;">
+              <h4  style="color: white;margin-left:180px"> Quà Tặng</h4>
+                     
+                      </div>
+                      <div class="container" style="margin-top:30px">
+                       <center> <h1> Ahihi </h1>
+                           <h3>Làm Gì Có Quà mà Tặng</h3> <br>
+                           <img src="anh/anh01.gif"></center>   
+                          
+                      <div class="modal-footer" style="margin-top:30px">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div id="chat">
+    <a href="https://www.messenger.com/"><i class="far fa-comment-dots"></i></a>
+  </div>
+    <footer class="footer">
+        <div id="container" class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-capitalize mb-4">THÔNG TIN LIÊN HỆ</h4>
+                <div class="chu_1">
+                    <i class="fas fa-map-marker-alt"></i>
+                        Trụ sở chính: Tầng 5, 23 Ngựu Bình, Phường An Cựu, TP Huế
+                </div>
+                <div class="chu_4">
+                    <i class="fas fa-phone"></i> 
+                        123-456-789
+                </div>
+                <div class="chu_5">
+                    <i class="far fa-clock"></i> 
+                        8:00 - 17:00
+                </div>
+                <div class="chu_6">
+                    <i class="fas fa-envelope"></i> 
+                        info@gmail.com
+                </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Around the Web</h4>
+              <a class="btn btn-outline-light btn-info mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-info mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-warning mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+              <a class="btn btn-outline-light btn-success mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+          </div>
+          <div class="col-lg-4">
+                <h4 class="text-uppercase mb-4">MAP</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14900.125550259283!2d105.8055301!3d20.9913789!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1571912441666!5m2!1svi!2s" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          </div>
+        </div>
+                
+            </footer>
+            <footer id="Footer-1" class="footer-1 text-center">
+                  <p><strong>© 2020 Copyright: HELLOHello.com</strong></p>
+            </footer>
+    <div class="modal" id="Modal-DN">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #2574A9;">
+                        <h4 class="modal-title" style="color: white;">Đăng ký khóa học!</h4>
+                        <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                              <form style="margin-top: 1rem;margin-bottom: 1rem;" action="#" method="post" class="form" role="form"> 
+                               <div class="row"> 
+                                <div class="col-xs-6 col-md-6">
+                                    <input class="form-control" name="firstname" placeholder="Họ" required="" autofocus="" type="text"> 
+                                </div> 
+                                <div class="col-xs-6 col-md-6">
+                                    <input class="form-control" name="lastname" placeholder="Tên" required="" type="text"> 
+                                </div> 
+                               </div> 
+                                    <input class="form-control" name="youremail" placeholder="Email" type="email">
+                                    <input class="form-control" name="password" placeholder="Mật khẩu" type="password">
+                                    <input class="form-control" name="retypepassword" placeholder="Nhập lại mật khẩu" type="password">
+                                <label for="">Chọn khóa học</label> 
+                                <div class="row"> 
+                                <div class="col-xs-6 col-md-6">
+                                    <select class="form-control">
+                                        <option value="Day">Tiếng anh cấp 1</option>
+                                        <option value="Day">Tiếng anh cấp 2</option>
+                                        <option value="Day">Tiếng anh cấp 3</option>
+                                    </select>
+                                </div>
+                                </div>
+                               <label for=""> Ngày sinh</label> 
+                               <div class="row"> 
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Day">1</option>
+                                        <option value="Day">2</option>
+                                        <option value="Day">3</option>
+                                        <option value="Day">4</option>
+                                        <option value="Day">5</option>
+                                        <option value="Day">7</option>
+                                        <option value="Day">8</option>
+                                        <option value="Day">9</option>
+                                        <option value="Day">10</option>
+                                        <option value="Day">11</option>
+                                        <option value="Day">12</option>
+                                        <option value="Day">13</option>
+                                        <option value="Day">14</option>
+                                        <option value="Day">15</option>
+                                        <option value="Day">16</option>
+                                        <option value="Day">17</option>
+                                        <option value="Day">18</option>
+                                        <option value="Day">19</option>
+                                        <option value="Day">20</option>
+                                        <option value="Day">21</option>
+                                        <option value="Day">22</option>
+                                        <option value="Day">23</option>
+                                        <option value="Day">24</option>
+                                        <option value="Day">25</option>
+                                        <option value="Day">26</option>
+                                        <option value="Day">27</option>
+                                        <option value="Day">28</option>
+                                        <option value="Day">29</option>
+                                        <option value="Day">30</option>
+                                        <option value="Day">31</option>
+                                    </select> 
+                                </div> 
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Month">12</option>
+                                        <option value="Month">11</option>
+                                        <option value="Month">10</option>
+                                        <option value="Month">9</option>
+                                        <option value="Month">8</option>
+                                        <option value="Month">7</option>
+                                        <option value="Month">6</option>
+                                        <option value="Month">5</option>
+                                        <option value="Month">4</option>
+                                        <option value="Month">3</option>
+                                        <option value="Month">2</option>
+                                        <option value="Month">1</option>
+                                    </select> 
+                                </div> 
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Year">1995</option>
+                                        <option value="Year">1996</option>
+                                        <option value="Year">1997</option>
+                                        <option value="Year">1998</option>
+                                        <option value="Year">1999</option>
+                                        <option value="Year">2000</option>
+                                        <option value="Year">2001</option>
+                                        <option value="Year">2002</option>
+                                        <option value="Year">2003</option>
+                                        <option value="Year">2004</option>
+                                        <option value="Year">2005</option>
+                                        <option value="Year">2006</option>
+                                        <option value="Year">2007</option>
+                                        <option value="Year">2008</option>
+                                        <option value="Year">2009</option>
+                                        <option value="Year">2010</option>
+                                        <option value="Year">2011</option>
+                                        <option value="Year">2012</option>
+                                        <option value="Year">2013</option>
+                                    </select> 
+                                </div> 
+                               </div> 
+                                    <label class="radio-inline">
+                                        <input name="sex" id="inlineCheckbox1" value="male" type="radio">
+                                        Nam
+                                    </label> 
+                                    <label class="radio-inline">
+                                        <input name="sex" id="inlineCheckbox2" value="female" type="radio">
+                                        Nữ
+                                    </label> 
+                               <br> 
+                               <br> 
+                               <button class="btn btn-lg btn-primary btn-block" type="submit"  style="background-color: #2574A9;"> Đăng ký</button> 
+                              </form> 
+                             </div> 
+                             <div class="col-md-1"></div>
+                            </div>
+                           </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal" id="Modal-KH">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #2574A9;">
+                        <h4 class="modal-title" style="color: white;">Đăng ký khóa học!</h4>
+                        <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                              <form style="margin-top: 1rem;margin-bottom: 1rem;" action="#" method="post" class="form" role="form"> 
+                               <div class="row"> 
+                                <div class="col-xs-6 col-md-6">
+                                    <input class="form-control" name="firstname" placeholder="Họ" required="" autofocus="" type="text"> 
+                                </div> 
+                                <div class="col-xs-6 col-md-6">
+                                    <input class="form-control" name="lastname" placeholder="Tên" required="" type="text"> 
+                                </div> 
+                               </div> 
+                                    <input class="form-control" name="youremail" placeholder="Email" type="email">
+                                <label for="">Chọn khóa học</label> 
+                                <div class="row"> 
+                                <div class="col-xs-6 col-md-6">
+                                    <select class="form-control">
+                                        <option value="Day">Tiếng anh cấp 1</option>
+                                        <option value="Day">Tiếng anh cấp 2</option>
+                                        <option value="Day">Tiếng anh cấp 3</option>
+                                    </select>
+                                </div>
+                                </div>
+                               <label for=""> Ngày sinh</label> 
+                               <div class="row"> 
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Day">1</option>
+                                        <option value="Day">2</option>
+                                        <option value="Day">3</option>
+                                        <option value="Day">4</option>
+                                        <option value="Day">5</option>
+                                        <option value="Day">7</option>
+                                        <option value="Day">8</option>
+                                        <option value="Day">9</option>
+                                        <option value="Day">10</option>
+                                        <option value="Day">11</option>
+                                        <option value="Day">12</option>
+                                        <option value="Day">13</option>
+                                        <option value="Day">14</option>
+                                        <option value="Day">15</option>
+                                        <option value="Day">16</option>
+                                        <option value="Day">17</option>
+                                        <option value="Day">18</option>
+                                        <option value="Day">19</option>
+                                        <option value="Day">20</option>
+                                        <option value="Day">21</option>
+                                        <option value="Day">22</option>
+                                        <option value="Day">23</option>
+                                        <option value="Day">24</option>
+                                        <option value="Day">25</option>
+                                        <option value="Day">26</option>
+                                        <option value="Day">27</option>
+                                        <option value="Day">28</option>
+                                        <option value="Day">29</option>
+                                        <option value="Day">30</option>
+                                        <option value="Day">31</option>
+                                    </select> 
+                                </div> 
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Month">12</option>
+                                        <option value="Month">11</option>
+                                        <option value="Month">10</option>
+                                        <option value="Month">9</option>
+                                        <option value="Month">8</option>
+                                        <option value="Month">7</option>
+                                        <option value="Month">6</option>
+                                        <option value="Month">5</option>
+                                        <option value="Month">4</option>
+                                        <option value="Month">3</option>
+                                        <option value="Month">2</option>
+                                        <option value="Month">1</option>
+                                    </select> 
+                                </div> 
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Year">1995</option>
+                                        <option value="Year">1996</option>
+                                        <option value="Year">1997</option>
+                                        <option value="Year">1998</option>
+                                        <option value="Year">1999</option>
+                                        <option value="Year">2000</option>
+                                        <option value="Year">2001</option>
+                                        <option value="Year">2002</option>
+                                        <option value="Year">2003</option>
+                                        <option value="Year">2004</option>
+                                        <option value="Year">2005</option>
+                                        <option value="Year">2006</option>
+                                        <option value="Year">2007</option>
+                                        <option value="Year">2008</option>
+                                        <option value="Year">2009</option>
+                                        <option value="Year">2010</option>
+                                        <option value="Year">2011</option>
+                                        <option value="Year">2012</option>
+                                        <option value="Year">2013</option>
+                                    </select> 
+                                </div> 
+                               </div> 
+                                    <label class="radio-inline">
+                                        <input name="sex" id="inlineCheckbox1" value="male" type="radio">
+                                        Nam
+                                    </label> 
+                                    <label class="radio-inline">
+                                        <input name="sex" id="inlineCheckbox2" value="female" type="radio">
+                                        Nữ
+                                    </label> 
+                               <br> 
+                               <br> 
+                               <button class="btn btn-lg btn-primary btn-block" type="submit"  style="background-color: #2574A9;"> Đăng ký</button> 
+                              </form> 
+                             </div> 
+                             <div class="col-md-1"></div>
+                            </div>
+                           </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

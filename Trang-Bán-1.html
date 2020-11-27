@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Trang bán 1 </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/cs.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script language="javascript" src="js/kiemtra.js"></script>
+</head>
+<body>
+    
+    <!-- Dang ky -->
+    <div class="login" id="login-box">
+      <form action="" method="POST" onsubmit="return validate()">
+            <div class="register">
+                  <h1>Đăng ký</h1>  
+                  <p>Vui lòng điền thông tin để đăng ký</p>
+                  <hr>
+                  <label for="username"><b>Tên Đăng Nhập </b></label><br>
+                  <input type="text" placeholder="Họ và tên" name="username" id="username" style="width:470px"><br>
+                  <label for="password"><b>Mật khẩu </b></label><br>
+                  <input type="password" placeholder="******" name="password" id="password" style="width:470px"><br>
+                  <label for="password-repeat"><b>Nhập Lại Mật Khẩu </b></label><br>
+                  <input type="password" placeholder="******" name="password-repeat" id="password-repeat" style="width:470px">
+                  <p>Để tạo tài khoản vui lòng đồng ý với điều khoản của chúng tôi <a href="#">Điều Khoản</a>.</p>
+                  <button type="submit" class="submit"><strong>Đăng ký</strong></button>
+                  <p>Bạn đã có tài khoản rồi? <a href="">Đăng nhập</a>.</p>
+            </div>
+            <div class="register login"></div>
+      </form>
+  </div>
+  <div class="login" id="login-box1">
+      <form id="ddd" action="" method="POST" onsubmit="return validate1()">
+            <div class="register">
+                  <h1>Đăng Nhập</h1>
+                  <p>Điền Thông Tin Đăng Nhập Của Bạn Tại Đây</p>
+                  <hr>
+                  <label for="username1"><b>Tên Đăng Nhập </b></label><br>
+                  <input type="text" placeholder="Nhập tên đăng Nhập" name="username" id="username1" style="width:470px"><br>
+                  <label for="password1"><b>Mật khẩu </b></label><br>
+                  <input type="password" placeholder="*********" name="password" id="password1" style="width:470px"><br>
+                  <hr>
+                  <p>Để tạo tài khoản vui lòng đồng ý với điều khoản của chúng tôi <a href="#">Điều Khoản</a>.</p>
+                  <button type="submit" class="submit"><strong>Đăng Nhập</strong></button>
+                  <p>Bạn Chưa Có Tài Khoản?<a href="formdangnhap.html">Đăng Ký Ngay</a>.</p>
+            </div>
+            <div class="register login"></div>
+      </form>
+  </div>
+  <div id="A-1" class="container-fluid">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+            <img src="anh/LoGo.png">
+        </div>
+        <div class="col-md-4">
+             <center> <h1><strong>HELLO ENGLISH</strong></h1> <div class="br"></div>
+             <h5 class="T-T"> Giải pháp học tiếng Anh giao tiếp tốt nhất cho người bận rộn</h5></center></div>
+        <div class="col-md-4">
+        <!-- <div class="T-H">
+          <h5><strong><i class="fas fa-phone-volume"></i> HOTLINE: 0988.333.22#</strong></h5>
+        </div> -->
+          <div class="A-D">
+            <a class="login-window button bg-danger" href="#login-box" ><i class="fa fa-home"></i> Đăng Ký</a>
+            <a class="login-window button bg-info" href="#login-box1" ><i class="fa fa-envelope"></i> Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <div class="container-fluid">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#"><strong>HELLO</strong></a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="BootStrap1.html"><strong>Trang Chủ</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trangcon1.html"><strong>Giới Thiệu</strong></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Khóa Học</strong></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="trangcon3.html"><strong>Tiếng Anh Trẻ Em</strong></a>
+                                <a class="dropdown-item" href="trangcon5.html"><strong>Tiếng Anh Doanh Nghiệp</strong></a></a>
+                                <a class="dropdown-item" href="trangcon4.html"><strong>Tiếng Anh luyện thi IELTS</strong></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trangcon2.html"><strong>Tin Tức & Sự Kiện</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.messenger.com/"><strong>Liên Hệ</strong></a>
+                        </li>
+                    </ul>
+                        <form>
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      <div>
+                        <i class="fas fa-dolly" style="margin-left:8px;color: azure;"></i>
+                      </div>
+                      </div>
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                          <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search fa-fw"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                            <form class="form-inline mr-auto w-100 navbar-search">
+                              <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown no-arrow mx-1">
+                          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell fa-fw"></i>
+                           
+                            <span class="badge badge-danger badge-counter">3+</span>
+                          </a>
+                          
+                          <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">
+                              THÔNG BÁO
+                            </h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#Modal-KH">
+                              <div class="mr-3">
+                                <div class="icon-circle bg-primary">
+                                  <i class="fas fa-file-alt text-white"></i>
+                                </div>
+                              </div>
+                              <div>
+                                <div class="font-weight-bold">KHÓA HỌC XÓA MÙA ENGLISH</div>Đăng Ký Ngay ! Các bạn ơi giảm học phí Duy nhát tháng 7 này !
+                              </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" src="#Modal-KH">
+                              <div class="mr-3">
+                                <div class="icon-circle bg-success">
+                                  <i class="fas fa-donate text-white"></i>
+                                </div>
+                              </div>
+                              <div>
+                                <div class="font-weight-bold">KHÓA HỌC CẤP TỐC</div>
+                                Mua ngay thôi các bạn ơi, chỉ 499k có ngay khóa học !
+                              </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#Modal-KH">
+                              <div class="mr-3">
+                                <div class="icon-circle bg-warning">
+                                  <i class="fas fa-exclamation-triangle text-white"></i>
+                                </div>
+                              </div>
+                              <div>
+                                <div class="font-weight-bold">KHÓA HỌC ENGLISH DOANH NGHIỆP</div>
+                                Còn chừng chờ gì nữa ! Hot Hot sẽ mở trong tháng 8 này !
+                              </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500" href="#">Xem thêm</a>
+                          </div>
+                        </li>
+            </div>
+        </div>   
+  </nav>
+    <div class="container-fluid mt-3">
+        <div class="container ddd">
+            <div class="row m-4">
+              <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <img src="anh/bia-truoc-1.png" alt="" style="width:300px;height:400px;">
+                </div>
+                <div class="col-md-6">                   
+                      <h4><strong style="color:white;background-color:crimson;">HOT</strong> Sách - 2000 Từ Vựng Tiếng Anh Theo Chủ Đề</h4>
+                      <p style="color: crimson;">4.5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>  |  <strong>596</strong> Đánh Giá  |  <strong>960</strong> Đã Bán</p>
+                  <div style="background-color: tomato;height:30px;">
+                      <h4 style="color:white;margin-left: 8px;"><strong>F<i class="fas fa-bolt" style="font-size: 20px;"></i>ASH</strong> SALE</h4>
+                  </div>
+                  <div style="padding: 15px 20px;background: #fafafa;">
+                      <div>
+                        <span class="G-T-1">₫65.000</span>
+                        <span class="G-T-2">₫59.000</span>
+                      </div>
+                  </div>
+                  <div class="row" style="margin-top: 10px;">
+                      <div class="col-md-3">
+                        <span class="G-T-3">Vận Chuyển</span>
+                      </div>
+                      <div class="col-md-9">
+                          <img src="anh/9d21899f3344277e34d40bfc08f60bc7.png" width="25" height="15"><span> Miễn Phí Vận Chuyển</span>
+                          <p class="G-T-3">   Miễn Phí Vận Chuyển khi đơn đạt giá trị trên 50k !</p>
+                      </div>
+                      <div class="col-md-3"></div>
+                      <div class="col-md-4">
+                        <i class="fas fa-truck" style="color: dodgerblue;"></i><span> Vận Chuyển Tới</span>
+                        <p><i class="fas fa-dollar-sign" style="color: rgb(255, 181, 21);margin-right:15px;"></i>Phí Vận Chuyển</p>
+                      </div>
+                      <div class="col-md-5">
+                        <select class="qty-select sidebar-select">
+                          <option value="1">Thừa Thiên Huế</option>
+                          <option value="2">Hà Nội</option>
+                          <option value="3">Thanh Hóa</option>
+                          <option value="3">Hà Tỉnh</option>
+                          <option value="3">Nghệ An</option>
+                          <option value="3">Đà Nẵng</option>
+                          <option value="3">TP. Hồ Chí Minh</option>
+                          <option value="3">Cà Mau</option>
+                        </select>
+                        <p class="f-r">₫0</p>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="G-T-3">Số Lượng</p>
+                      </div>
+                      <div class="col-md-6">
+                        <input class="cart-quantity-input" type="number" value="1" style="width:100px;">
+                        <span>462 sản phẩm có sẵn</span>
+                      </div>
+                      <div class="col-md-3">
+                      </div>
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4" style="margin-top: 40px;">
+                        <a href="Trang-Giỏ-1.html"><button class="btn bg-danger" style="float: right;"><strong style="color: azure;">Mua Ngay</strong></button></a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+            <div class="container-fluid mt-4">
+              <div class="container KKK">
+                <div class="row m-4">
+                    <div class="col-md-6 M_T"><a href="#" data-toggle="collapse" data-target="#demo"><img src="anh/Mô tả.gif" alt=""> <Strong class="M_TT"> Mô Tả Sản Phẩm</Strong></a></div>
+                    <div class="col-md-6 D_G"><a href="#" data-toggle="collapse" data-target="#demo-1"><img src="anh/Mô tả.gif" alt=""> <Strong class="D_GG"> Đánh Giá Sản Phẩm</Strong></a></div>
+
+                    <div class="col-md-12 mb-2">
+                      <div id="demo" class="collapse">
+                        <div class="row">
+                          <div class="col-md-1"></div>
+                          <div class="col-md-10">
+                            <p><strong class="T-Q">NĂM XUẤT BẢN</strong> 2019</p>
+                            <p><strong class="T-Q">MÃ SẢN PHẨM</strong> 8935246915486</p>
+                            <p><strong class="T-Q">KÍCH THƯỚC</strong> 14,5×20,5</p>
+                            <p><strong class="T-Q">NHÀ XUẤT BẢN</strong> NXB Hồng Đức</p>
+                            <p><strong class="T-Q">TÁC GIẢ</strong> The Windy</p>
+                            <p>Cuốn sách “Tự học 2000 từ vừng tiếng Anh theo chủ đề” tổng hợp 2000 từ vựng tiếng Anh thông dụng nhất trong cuộc sống hàng ngày theo từng chủ đề cụ thể.</p>
+                            <br>
+                            <h5><strong class="T-Q">Cuốn sách giúp bạn:</strong></h5>
+                            <ul>
+                              <li>Nắm trọn 2000 từ vựng tiếng Anh theo chủ đề thông dụng nhất</li>
+                              <li>Tiếp cận cách học sáng tạo và tập trung</li>
+                              <li>Tạo nền tảng căn bản trong giao tiếp tiếng Anh</li>
+                              <li>Củng cố kiến thức hiệu quả qua bài tập thực hành chọn lọc</li>
+                              <li>Tặng ngay Ebook flashcards 100 cụm động từ thông dụng nhất</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-1"></div>
+                          <div class="col-md-12"><button class="btn btn-danger mt-5" style="float: right;" data-toggle="collapse" data-target="#demo">Đóng</button></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-2">
+                      <div id="demo-1" class="collapse">
+                        <div class="row">
+                          <div class="col-md-8">
+                            <h4><strong class="D_GT">596 đánh giá cho Tự học 2000 từ vựng tiếng Anh theo chủ đề</strong></h4>
+                            <div class="card GD-1 mb-1">
+                              <div class="row">
+                                <div class="col-md-2">
+                                  <img src="anh/Đánh Giá 1.jpg" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                  <div class="card-title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                  <p><strong>Ngọc Huyền</strong> – 17/07/2020</p>
+                                  <p>Mình rất thích phần bài tập ứng dụng !</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card GD-1 mb-1">
+                              <div class="row">
+                                <div class="col-md-2">
+                                  <img src="anh/Đánh Giá 1.jpg" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                  <div class="card-title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                  <p><strong>Nguyễn Dũng</strong> – 14/07/2020</p>
+                                  <p>Hay !</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card GD-1 mb-1">
+                              <div class="row">
+                                <div class="col-md-2">
+                                  <img src="anh/Đánh Giá 1.jpg" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                  <div class="card-title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                  <p><strong>Toan Phạm</strong> – 12/07/2020</p>
+                                  <p>Học được theo app rất tiện, đi đâu cũng học được !</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card GD-1 mb-1">
+                              <div class="row">
+                                <div class="col-md-2">
+                                  <img src="anh/Đánh Giá 1.jpg" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                  <div class="card-title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                  <p><strong>Thu Hằng</strong> – 10/07/2020</p>
+                                  <p>Nhìn bìa sách thôi là thích học rồi ^^ !</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card GD-1 mb-1">
+                              <div class="row">
+                                <div class="col-md-2">
+                                  <img src="anh/Đánh Giá 1.jpg" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                  <div class="card-title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                  <p><strong>Tuấn An`</strong> – 30/06/2020</p>
+                                  <p>Các chủ đề rất sát thực tế, học rất dễ hiểu ạ !</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <form style="margin-top: 1rem;margin-bottom: 1rem;" action="#" method="post" class="form" role="form"> 
+                              <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                  <h5><strong class="D_GT">Thêm đánh giá</strong></h5>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                  <p><strong>Nhận xét của bạn *</strong></p>
+                                  <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                </div>
+                                <div class="col-xs-6 col-md-6">
+                                    <input class="form-control" name="firstname" placeholder="Tên *" required="" autofocus="" type="text"> 
+                                </div> 
+                                <div class="col-xs-6 col-md-6">
+                                    <input class="form-control" name="youremail" placeholder="Email *" type="email">
+                                </div> 
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label" for="check2">
+                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Lưu tên của tôi, email, và trang web trong trình duyệt này cho lần bình luận kế tiếp của tôi.
+                                </label>
+                              </div>
+                                  <br>
+                                  <button class="btn btn-lg btn-primary btn-block" type="submit"  style="background-color: #2574A9;">Giử Đi</button> 
+                            </form> 
+                          </div>
+                          <div class="col-md-12"><button class="btn btn-danger mt-5" style="float: right;" data-toggle="collapse" data-target="#demo-1">Đóng</button></div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="container">
+                <div class="col-md-1"></div>
+                <div class="row mb-5" style="margin-top: 30px;">
+                  <div class="col-lg-12 text-center">
+                      <h2 class="text-black-100 mt-0"><strong style="color: #2574A9;">MỘT SỐ QUYỂN SÁCH BẠN NÊN TRANG BỊ</strong></h2>
+                      <p class="text-black-100 mb-4" style="color: #2574A9;">AMES ENGLISH - Vì một Việt Nam giỏi Tiếng Anh</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="card-deck">
+                      <div class="card" style="width: 380px">
+                        <div class="card-body">
+                          <a href="Trang-Bán-1.html#A-1" style="text-decoration: none;">
+                            <img class="card-img-top" src="anh/bia-truoc-1.png" alt="Xin hãy tải lại !" style="height:250px;width:200px"> 
+                            <h5 class="card-title">2000 Từ Vựng Tiếng Anh Theo Chủ Đề</h5>
+                            <h5 class="f-r">59.000đ</h5>
+                            <del>65.000đ</del>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 380px">
+                        <div class="card-body">
+                          <a href="Trang-Bán-2.html#A-1" style="text-decoration: none;">
+                            <img class="card-img-top" src="anh/bia-truoc-2.png" alt="Xin hãy tải lại !" style="height:250px;width:200px"> 
+                            <h5 class="card-title">Ứng dụng siêu trí nhớ 4000 từ vựng</h5>
+                            <h5 class="f-r">99.000đ</h5>
+                            <del>119.000đ</del>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 380px">
+                        <div class="card-body">
+                          <a href="Trang-Bán-3.html#A-1" style="text-decoration: none;">
+                            <img class="card-img-top" src="anh/bia-truoc-22.png" alt="Xin hãy tải lại !" style="height:250px;width:200px"> 
+                            <h5 class="card-title">The Ultimate Guide to Academic Reading</h5>
+                            <h5 class="f-r">129.000đ</h5>
+                            <del>132.000đ</del>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 380px">
+                        <div class="card-body">
+                          <a href="Trang-Bán-4.html#A-1" style="text-decoration: none;">
+                            <img class="card-img-top" src="anh/bia-truoc-4.jpg" alt="Xin hãy tải lại !" style="height:250px;width:200px"> 
+                            <h5 class="card-title">Luyện siêu trí nhớ từ vựng tiếng Anh</h5>
+                            <h5 class="f-r">179.000đ</h5>
+                            <del>188.000đ</del>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <section id="G-1" class="container-fluid mb-4">
+        <div class="container KKK">
+            <div class="row mb-3 mt-4">
+                <div class="col-md-12 text-center mb-4">
+                    <h3><strong>Học viên của chúng tôi trước đây cũng</strong></h3>
+                    <h3><strong>cảm thấy giống bạn vì:</strong></h3>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center" style="width:200px;">
+                    <i class='far fa-clock mb-3' style='font-size:60px;color: tomato;'></i>
+                    <p class="T-1"><strong>Quá bận rộn với công việc, không có
+                        thời gian đến lớp học?</strong></p>
+                    <p class="text-justify">Thay vì chỉ tổ chức các lớp học cố định, AMES ENGLISH tổ chức 16 ca học tập hàng ngày, bắt đầu từ 8h sáng đến 24h đêm. Với 16 ca học/ngày và 7 ngày/tuần, sẽ dễ dàng đáp ứng nhu cầu LUYỆN NÓI TIẾNG ANH hàng ngày của anh/chị ngay cả trong điều kiện làm việc đặc thù nhất: Làm đêm, học ngày; Làm ngày, học đêm.</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center" style="width:200px;">
+                    <i class='fas fa-globe-americas mb-3' style='font-size:60px;color: rgb(18, 117, 156);'></i>
+                    <p class="T-2"><strong>Không có môi trường giao tiếp, không được thực hành với giáo viên bản ngữ</strong></p>
+                    <p class="text-justify">Thay vì phải len lỏi trong lúc tắc đường để đến địa điểm học tập, anh/chị có thể thoải mái học tập tại cơ quan, nhà riêng hay tại quán cafe chỉ với smartphone, tablet, máy tính. Anh/chị sẽ được tương tác 2 chiều với top giảng viên giỏi nhất được chọn lựa từ hơn 3000 giảng viên Âu - Úc - Mỹ.</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center" style="width:200px;">
+                    <i class='far fa-compass mb-3' style='font-size:60px;color:teal;"'></i>
+                    <p class="T-3"><strong>Mất gốc, không biết bắt đầu từ đâu</strong></p>
+                    <br>
+                    <p class="text-justify">Lộ trình học tập sẽ được thiết kế riêng cho từng cá nhân căn cứ vào xuất phát điểm về trình độ đầu vào vàmục tiêu khi rèn luyện tiếng Anh với AMES ENGLISH. Anh/chị có thể bắt đầu học tập ngay với lộ trình riêng, không cần chờ mở lớp.</p>
+                </div>
+            </div>
+            <div class="text-lg-center">
+            <button type="button" class="btn btn-outline-info mb-5" data-toggle="modal" data-target="#Modal-KH">
+                <strong>Đăng Ký</strong>
+              </button>
+            </div>
+            <div>
+    </section>
+    <div id="chat">
+      <a href="https://www.messenger.com/"><i class="far fa-comment-dots"></i></a>
+    </div>
+    <div class="container-fluid ddd mb-4" style="background-color:rgb(215, 237, 252);">
+        <div class="container" style="margin-top: 40px;">
+            <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 mb-5" style="margin-top: 50px;">
+              <div class="col-lg-12 text-center">
+                <h2 class="text-black-100 mt-0"><strong style="color:#2574A9;">ĐĂNG KÝ HỌC NGAY THÔI CÁC BẠN</strong></h2>
+            </div>
+            <div class="alert alert-info text-md-center">
+              <a href="#" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Vui lòng nhập đúng thông tin nha hihi !</strong>
+            </div>
+            <form style="margin-top: 1rem;margin-bottom: 1rem;" action="#" method="post" class="form" role="form"> 
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="firstname" placeholder="Họ" required="" autofocus="" type="text"> 
+                </div> 
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="lastname" placeholder="Tên" required="" type="text"> 
+                </div> 
+            </div> 
+
+                    <input class="form-control" name="youremail" placeholder="Email" type="email">
+                    <input class="form-control" name="lastphone" placeholder="+84" required="" type="number">
+                <label for="">Chọn khóa học</label> 
+                <div class="row"> 
+                <div class="col-xs-6 col-md-6">
+                    <select class="form-control">
+                        <option value="Day">Tiếng anh cấp 1</option>
+                        <option value="Day">Tiếng anh cấp 2</option>
+                        <option value="Day">Tiếng anh cấp 3</option>
+                    </select>
+                </div>
+                </div>
+            <label for=""> Ngày sinh</label> 
+            <div class="row"> 
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Day">1</option>
+                        <option value="Day">2</option>
+                        <option value="Day">3</option>
+                        <option value="Day">4</option>
+                        <option value="Day">5</option>
+                        <option value="Day">7</option>
+                        <option value="Day">8</option>
+                        <option value="Day">9</option>
+                        <option value="Day">10</option>
+                        <option value="Day">11</option>
+                        <option value="Day">12</option>
+                        <option value="Day">13</option>
+                        <option value="Day">14</option>
+                        <option value="Day">15</option>
+                        <option value="Day">16</option>
+                        <option value="Day">17</option>
+                        <option value="Day">18</option>
+                        <option value="Day">19</option>
+                        <option value="Day">20</option>
+                        <option value="Day">21</option>
+                        <option value="Day">22</option>
+                        <option value="Day">23</option>
+                        <option value="Day">24</option>
+                        <option value="Day">25</option>
+                        <option value="Day">26</option>
+                        <option value="Day">27</option>
+                        <option value="Day">28</option>
+                        <option value="Day">29</option>
+                        <option value="Day">30</option>
+                        <option value="Day">31</option>
+                    </select> 
+                </div> 
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Month">12</option>
+                        <option value="Month">11</option>
+                        <option value="Month">10</option>
+                        <option value="Month">9</option>
+                        <option value="Month">8</option>
+                        <option value="Month">7</option>
+                        <option value="Month">6</option>
+                        <option value="Month">5</option>
+                        <option value="Month">4</option>
+                        <option value="Month">3</option>
+                        <option value="Month">2</option>
+                        <option value="Month">1</option>
+                    </select> 
+                </div> 
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Year">1995</option>
+                        <option value="Year">1996</option>
+                        <option value="Year">1997</option>
+                        <option value="Year">1998</option>
+                        <option value="Year">1999</option>
+                        <option value="Year">2000</option>
+                        <option value="Year">2001</option>
+                        <option value="Year">2002</option>
+                        <option value="Year">2003</option>
+                        <option value="Year">2004</option>
+                        <option value="Year">2005</option>
+                        <option value="Year">2006</option>
+                        <option value="Year">2007</option>
+                        <option value="Year">2008</option>
+                        <option value="Year">2009</option>
+                        <option value="Year">2010</option>
+                        <option value="Year">2011</option>
+                        <option value="Year">2012</option>
+                        <option value="Year">2013</option>
+                    </select> 
+                </div> 
+            </div> 
+                    <label class="radio-inline">
+                        <input name="sex" id="inlineCheckbox1" value="male" type="radio">
+                        Nam
+                    </label> 
+                    <label class="radio-inline">
+                        <input name="sex" id="inlineCheckbox2" value="female" type="radio">
+                        Nữ
+                    </label>
+                    <div class="alert alert-warning text-md-center">
+                      <strong><i class="	far fa-bell"></i> Hello English sẽ giử cho bạn thông báo và liên hệ với bạn ngay khi đăng ký khóa học này !</strong>
+                    </div> 
+            <button class="btn btn-lg btn-primary btn-block" type="submit"  style="background-color: #2574A9;"> Đăng ký</button> 
+            </form> 
+            </div> 
+            <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mb-2">
+        <div id="container" class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-capitalize mb-4">THÔNG TIN LIÊN HỆ</h4>
+                <div class="chu_1">
+                    <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
+                        Trụ sở chính: Tầng 5, 23 Ngựu Bình, Phường An Cựu, TP Huế
+                </div>
+                <div class="chu_4">
+                    <i class="fas fa-phone" style="margin-right: 10px;"></i> 
+                        123-456-789
+                </div>
+                <div class="chu_5">
+                    <i class="far fa-clock" style="margin-right: 10px;"></i> 
+                        8:00 - 17:00
+                </div>
+                <div class="chu_6">
+                    <i class="fas fa-envelope" style="margin-right: 10px;"></i> 
+                        info@gmail.com
+                </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Around the Web</h4>
+              <a class="btn btn-outline-light btn-info mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-info mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-warning mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+              <a class="btn btn-outline-light btn-success mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+          </div>
+          <div class="col-lg-4">
+                <h4 class="text-uppercase mb-4">MAP</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14900.125550259283!2d105.8055301!3d20.9913789!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1571912441666!5m2!1svi!2s" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          </div>
+        </div>
+    </footer>
+    <footer id="Footer-1" class="footer-1 text-center">
+        <p><strong>© 2020 Copyright: AmesHello.com</strong></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

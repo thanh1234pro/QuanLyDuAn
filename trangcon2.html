@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cs.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+       jQuery(document).ready(function($) {
+            pos = $("#mainNav").position();
+            $(window).scroll(function() {
+                var posScroll = $(document).scrollTop();
+                if(parseInt(posScroll) > parseInt(pos.top)){
+                    $("#mainNav").addClass('fixed');
+                }else{
+                    $("#mainNav").removeClass('fixed');
+                }
+            });
+        });
+       // doimaubg
+
+       function doimau() {    
+        document.getElementById("bg").style.backgroundColor = "#444444";           
+        } 
+       function doimau1() {    
+        document.getElementById("bg").style.backgroundColor = "white";
+     
+           
+        } 
+    </script>
+    <style type="text/css">
+  /*menudep*/
+#mySidenav a {
+
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 130px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 320px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 380px;
+  background-color: #2196F3; /* Blue */
+}
+
+#projects {
+  top: 440px;
+  background-color: #f44336; /* Red */
+}
+
+#contact {
+  top: 500px;
+  background-color: #555 /* Light Black */
+}
+
+      
+    </style>
+</head>
+<body>
+    <div id="bg"> 
+  <div id="A-1" class="container-fluid">
+      <div class="container">
+          <div class="row">
+          <div class="col-md-4">
+              <img src="anh/LoGo.png">
+          </div>
+          <div class="col-md-4">
+               <center> <h1><strong>HELLO ENGLISH</strong></h1> <div class="br"></div>
+               <h5 class="T-T"> Giải pháp học tiếng Anh giao tiếp tốt nhất cho người bận rộn</h5></center></div>
+          <div class="col-md-4">
+          <!-- <div class="T-H">
+            <h5><strong><i class="fas fa-phone-volume"></i> HOTLINE: 0988.333.22#</strong></h5>
+          </div> -->
+            <div class="A-D">
+              <a class="login-window button bg-danger" href="#login-box" ><i class="fa fa-home"></i> Đăng Ký</a>
+              <a class="login-window button bg-info" href="#login-box1" ><i class="fa fa-envelope"></i> Đăng nhập</a>
+            </div>
+          </div>
+          </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container-fluid">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#"><strong>HELLO</strong></a>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="BootStrap1.html"><strong>Trang Chủ</strong></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="trangcon1.html"><strong>Giới Thiệu</strong></a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Khóa Học</strong></a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                  <a class="dropdown-item" href="trangcon3.html"><strong>Tiếng Anh Trẻ Em</strong></a>
+                                  <a class="dropdown-item" href="trangcon5.html"><strong>Tiếng Anh Doanh Nghiệp</strong></a></a>
+                                  <a class="dropdown-item" href="trangcon4.html"><strong>Tiếng Anh luyện thi IELTS</strong></a>
+                              </div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="trangcon2.html"><strong>Tin Tức & Sự Kiện</strong></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="trangcon7.html"><strong>Xu Hướng</strong></a>
+                          </li>
+                      </ul>
+                          <form>
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                        <div>
+                          <i class="fas fa-dolly" style="margin-left:8px;color: azure;"></i>
+                        </div>
+                        </div>
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                              <form class="form-inline mr-auto w-100 navbar-search">
+                                <div class="input-group">
+                                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">
+                                      <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </li>
+                        
+                          <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-bell fa-fw"></i>
+                             
+                              <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                              <h6 class="dropdown-header">
+                                THÔNG BÁO
+                              </h6>
+                              <a class="dropdown-item d-flex align-items-center" href="#Modal-KH">
+                                <div class="mr-3">
+                                  <div class="icon-circle bg-primary">
+                                    <i class="fas fa-file-alt text-white"></i>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="font-weight-bold">KHÓA HỌC XÓA MÙA ENGLISH</div>Đăng Ký Ngay ! Các bạn ơi giảm học phí Duy nhát tháng 7 này !
+                                </div>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" src="#Modal-KH">
+                                <div class="mr-3">
+                                  <div class="icon-circle bg-success">
+                                    <i class="fas fa-donate text-white"></i>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="font-weight-bold">KHÓA HỌC CẤP TỐC</div>
+                                  Mua ngay thôi các bạn ơi, chỉ 499k có ngay khóa học !
+                                </div>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#Modal-KH">
+                                <div class="mr-3">
+                                  <div class="icon-circle bg-warning">
+                                    <i class="fas fa-exclamation-triangle text-white"></i>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="font-weight-bold">KHÓA HỌC ENGLISH DOANH NGHIỆP</div>
+                                  Còn chừng chờ gì nữa ! Hot Hot sẽ mở trong tháng 8 này !
+                                </div>
+                              </a>
+                              <a class="dropdown-item text-center small text-gray-500" href="#">Xem thêm</a>
+                            </div>
+                          </li>
+              </div>
+          </div>   
+    </nav>
+</div><hr>
+    <div class="container-fluid">
+    <div class="container">
+		     	<center> <h2 style="color:blue"> Tin Tức </h2></center>
+			 <a href="https://ames.edu.vn/tin-tuc/20713/co-nen-doc-truoc-ca-bai-doc-khi-lam-bai-thi-ielts-reading-"> <h5>Có nên đọc trước cả bài đọc khi làm bài thi IELTS Reading?</h5>
+		   <img src="anh/anh25.jpg" height="500px" width="700px" style="float:left; margin-right:25px">
+		   <h5>Tưng Bừng Khai trương AMES chi nhánh Ba Đình</h5> </a>
+		   <a href="https://ames.edu.vn/tin-tuc/20712/tung-bung-khai-truong-ames-chi-nhanh-ba-dinh">  <img src="anh/anh26.jpg" height="200px" width="370x">
+		   <h5>Nên bắt đầu học IELTS khi nào?</h5></a>
+		   <a href="https://ames.edu.vn/tin-tuc/14360/nen-hoc-ielts-khi-nao"> <img src="anh/anh27.jpg" height="200px" width="370x"></a><hr>
+<div class="row">
+ <div class="col-md-8">
+	<h2 style="color:#FF3333"> Bài viết khác </h2>
+	<a href=""><img src="anh/anh28.jpg" height="200px" width="300px" style="float:left;margin-right:25px">
+	 <h4> "Bật mí "cách làm bài thi IELTS điểm cao </h4><br></a> 
+	  <h6> Thứ Bảy - 04.07.2020 </h6><br>
+	  <h6>"Bật mí "cách làm bài thi IELTS điểm cao</h6><br><br>
+	  <a href=""><img src="anh/anh9.jpg" height="200px" width="300px" style="float:left;margin-right:25px">
+	 <h4> Thành ngữ tiếng Anh về chủ đề nắng nóng </h4><br></a> 
+	  <h6>  Thứ Ba - 23.06.2020 </h6><br>
+	  <h6>Thời tiết oi bức nắng nóng phát điên, đây chính là những từ Tiếng Anh cực chuẩn để diễn tả tình tr...</h6><br><br>
+	  <a href=""><img src="anh/anh30.jpg" height="200px" width="300px" style="float:left;margin-right:25px">
+	 <h4> Ngày hội gia đình ý nghĩa cùng AMES ENGLISH 2020 </h4><br></a> 
+	  <h6>Thứ Hai - 22.06.2020 </h6><br>
+	  <h6>"Bật mí "cách làm bài thi IELTS điểm cao</h6><br><br>
+	  <a href=""><img src="anh/anh31.jpg" height="200px" width="300px" style="float:left;margin-right:25px">
+	 <h4>Cách sắp xếp thứ tự tính từ trong tiếng Anh </h4><br></a> 
+	  <h6>Thứ Bảy - 20.06.2020 </h6><br>
+	  <h6>Cách sắp xếp thứ tự tính từ trong tiếng Anh</h6><br><br>
+	  <a href=""><img src="anh/anh32.jpg" height="200px" width="300px" style="float:left;margin-right:25px">
+	 <h4> 
+Tổng hợp từ vựng 𝐏𝐀𝐑𝐀𝐏𝐇𝐑𝐀𝐒𝐄 trong IELTS Writing Task 1 </h4><br></a> 
+	  <h6> Thứ Bảy - 04.07.2020 </h6><br>
+	  <h6>Tổng hợp từ vựng 𝐏𝐀𝐑𝐀𝐏𝐇𝐑𝐀𝐒𝐄 trong #IELTS Writing Task 1</h6><br><br>
+</div>
+   <div class="col-md-4">
+   	<h2 style="color:#FF3333"> Tin tức nổi bật </h2>
+   	<a href=""><img src="anh/anh33.jpg" height="100px" width="150px" style="float:left;margin-right:25px">
+	 <h6> Để vào các doanh nghiệp bạn cần mức điểm... </h6></a> 
+	  <p> Thứ Bảy - 04.07.2020 </p><br><br>
+	  	<a href=""><img src="anh/anh34.jpg" height="100px" width="150px" style="float:left;margin-right:25px">
+	 <h6> Đánh thức tài năng cho trẻ tại trại hè t... </h6></a> 
+	  <p> Thứ Bảy - 04.07.2020 </p><br><br>
+	  	<a href=""><img src="anh/anh35.png" height="100px" width="150px" style="float:left;margin-right:25px">
+	 <h6> AMES STAR – SPELLING TEST ĐÃ SẴN SÀNG CH... </h6></a> 
+	  <p> Thứ Bảy - 04.07.2020 </p><br><br>
+	  	<a href=""><img src="anh/anh38.jpg" height="100px" width="150px" style="float:left;margin-right:25px">
+	 <h6> Tiếng Anh quan trọng như thế nào?? </h6></a> 
+	  <p> Thứ Bảy - 04.07.2020 </p><br><br>
+	  	<a href=""><img src="anh/anh37.jpg" height="100px" width="150px" style="float:left;margin-right:25px">
+	 <h6> Gặp gỡ lãnh đạo AMES ENGLISH tại Forbes ... </h6></a> 
+	  <p> Thứ Bảy - 04.07.2020 </p><br><br>
+	</div>
+   </div>
+  </div>
+ </div>
+       <div id="mySidenav" class="sidenav">
+  <a href="#" id="about" onclick="doimau()">Dark Mode</a>
+  <a href="#" id="blog" onclick="doimau1()">Tắt Mode</a>
+  <a href="#" id="projects" data-toggle="modal" data-target="#Modal-KH">Quà Tặng</a>
+  <a href="https://www.facebook.com/" id="contact">Facebook</a>
+</div>
+
+
+ <div class="modal" id="Modal-KH">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: #2574A9;">
+              <h4  style="color: white;margin-left:180px"> Quà Tặng</h4>
+                     
+                      </div>
+                      <div class="container" style="margin-top:30px">
+                       <center> <h1> Ahihi </h1>
+                           <h3>Làm Gì Có Quà mà Tặng</h3> <br>
+                           <img src="anh/anh01.gif"></center>   
+                          
+                      <div class="modal-footer" style="margin-top:30px">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div id="chat">
+    <a href="https://www.messenger.com/"><i class="far fa-comment-dots"></i></a>
+  </div>
+<footer class="footer">
+        <div id="container" class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-capitalize mb-4">THÔNG TIN LIÊN HỆ</h4>
+                <div class="chu_1">
+                    <i class="fas fa-map-marker-alt"></i>
+                        Trụ sở chính: Tầng 5, 23 Ngựu Bình, Phường An Cựu, TP Huế
+                </div>
+                <div class="chu_4">
+                    <i class="fas fa-phone"></i> 
+                        123-456-789
+                </div>
+                <div class="chu_5">
+                    <i class="far fa-clock"></i> 
+                        8:00 - 17:00
+                </div>
+                <div class="chu_6">
+                    <i class="fas fa-envelope"></i> 
+                        info@gmail.com
+                </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Around the Web</h4>
+              <a class="btn btn-outline-light btn-info mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-info mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-warning mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+              <a class="btn btn-outline-light btn-success mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+          </div>
+          <div class="col-lg-4">
+                <h4 class="text-uppercase mb-4">MAP</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14900.125550259283!2d105.8055301!3d20.9913789!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1571912441666!5m2!1svi!2s" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          </div>
+        </div>
+        
+    </footer>
+    <footer id="Footer-1" class="footer-1 text-center">
+          <p><strong>© 2020 Copyright: HELLOHello.com</strong></p>
+    </footer>
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
